@@ -1,0 +1,9 @@
+onlyBuiltDependencies:
+  - '@biomejs/biome'
+  - '@prisma/client'
+  - '@prisma/engines'
+  - '@tailwindcss/oxide'
+  - bcrypt
+  - better-sqlite3
+  - prisma
+  - sharp

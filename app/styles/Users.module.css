@@ -1,0 +1,63 @@
+.main {
+	flex: 1;
+	padding: 1rem 1rem;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	flex-direction: column;
+	min-height: 90vh;
+	background-color: #f5f5f5;
+}
+
+.formContainer {
+	background-color: white;
+	border-radius: var(--border-radius);
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	justify-content: center;
+	padding: 1rem;
+	width: 100%;
+	gap: 1rem;
+	max-width: 600px;
+}
+
+.listContainer {
+	width: 100%;
+	max-width: 600px;
+	padding: 1rem;
+	border-radius: var(--border-radius);
+	background-color: white;
+}
+
+.textLink {
+	color: rgb(124, 58, 237);
+	background: linear-gradient(
+			to right,
+			rgba(231, 216, 246, 1),
+			rgba(231, 216, 246, 1)
+		),
+		linear-gradient(
+			to right,
+			rgba(99, 1, 235, 1),
+			rgba(124, 58, 237, 1),
+			rgba(231, 216, 246, 1)
+		);
+	background-size: 100% 1px, 0 1px;
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 400ms;
+}
+
+.textLink:hover,
+.textLink:focus,
+.textLink:active {
+	background-size: 0 1px, 100% 1px;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+	.formContainer {
+		flex-wrap: wrap;
+	}
+}

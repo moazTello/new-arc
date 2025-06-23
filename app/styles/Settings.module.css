@@ -1,0 +1,28 @@
+.main {
+	min-height: 90vh;
+	max-height: 120vh;
+	max-width: fit-content;
+	padding: 1rem 1rem;
+	margin: 0 auto;
+	display: flex;
+	gap: 4rem;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+.block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: white;
+	padding: 2rem;
+	border-radius: var(--border-radius);
+}
+
+@media (max-width: 1000px) {
+	.main {
+		max-height: fit-content;
+		gap: 2rem;
+	}
+}
